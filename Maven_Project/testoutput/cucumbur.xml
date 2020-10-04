@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="67.499">
+    <testcase classname="Login Feature" name="Login with different users" time="28.179">
+        <failure message="expected:&lt;Welcome [Linda]&gt; but was:&lt;Welcome [Rushikesh]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given I am able to navigate to login........................................passed
+When i update username as "linda.anderson"..................................passed
+And i update the password as "linda.anderson"...............................passed
+And i click on the login button.............................................passed
+Then i should see the user name as "Welcome Rushikesh"......................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Welcome [Linda]> but was:<Welcome [Rushikesh]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinition.Login.i_should_see_the_user_name_as(Login.java:50)
+	at ✽.i should see the user name as "Welcome Rushikesh"(file:///E:/workspace/Maven_Project/src/test/resources/Login/Login.feature:28)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login Feature" name="Login with different users 2" time="20.366">
+        <failure message="expected:&lt;Welcome [Linda]&gt; but was:&lt;Welcome [Rushikesh]&gt;" type="org.junit.ComparisonFailure">
+            <![CDATA[Given I am able to navigate to login........................................passed
+When i update username as "linda.anderson"..................................passed
+And i update the password as "linda.anderson"...............................passed
+And i click on the login button.............................................passed
+Then i should see the user name as "Welcome Rushikesh"......................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<Welcome [Linda]> but was:<Welcome [Rushikesh]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefinition.Login.i_should_see_the_user_name_as(Login.java:50)
+	at ✽.i should see the user name as "Welcome Rushikesh"(file:///E:/workspace/Maven_Project/src/test/resources/Login/Login.feature:28)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Login Feature" name="negative Login" time="18.465">
+        <system-out>
+            <![CDATA[Given I am able to navigate to login........................................passed
+Given I am able to navigate to login........................................passed
+When i update username as "kaustub".........................................passed
+And i update the password as "kaustub"......................................passed
+And i click on the login button.............................................passed
+Then i should see the error message as "Invalid credentials"................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
